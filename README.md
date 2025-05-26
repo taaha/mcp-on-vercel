@@ -6,7 +6,7 @@ This is an adapter library that provides a stateless Python MCP server that runs
 
 ## Prerequisites
 
-Fork this repo and [connect it](https://vercel.com/docs/getting-started-with-vercel/template#connect-your-git-provider) to your Vercel account. Once it's deployed get the URL
+[Fork](https://github.com/sdiehl/mcp-on-vercel/fork) this repo and [connect it](https://vercel.com/docs/getting-started-with-vercel/template#connect-your-git-provider) to your Vercel account. Once it's deployed get the URL
 (`your-domain.vercel.app`).
 
 If you don't have uv installed, install it from astral:
