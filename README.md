@@ -1,4 +1,4 @@
-# Remote Serverles MCP Servers
+# Remote Serverless MCP Servers
 
 You want to run a remote MCP server, but you don't want to host or pay for a server. Well you're in luck, you can use the Vercel Hobby Tier to run it for free.
 
@@ -59,4 +59,4 @@ vercel dev
 
 ```bash
 vercel --prod
-``` 
+```
