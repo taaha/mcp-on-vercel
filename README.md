@@ -57,6 +57,10 @@ vercel dev
 
 ## Deploy
 
+You just push to Github and it should just work.
+
+Or manually deploy:
+
 ```bash
 vercel --prod
 ```
