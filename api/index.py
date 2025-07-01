@@ -13,6 +13,7 @@ from hirestream_client import (
     JobDetailsRequest,
     JobDetailsResponse,
     JobListingResponse,
+    ResumeParseRequest,
 )
 
 import datetime
@@ -57,6 +58,17 @@ async def show_job_details(
             job_details_request
         )
         return result
+    except Exception as e:
+        return [{"error": str(e)}]
+
+
+@mcp.tool()
+async def parse_resume(resume_parse_request: ResumeParseRequest) -> Dict:
+    """
+    Parse the resume file from the google drive URL.
+    """
+    try:
+        return await hirestream_client.parse_resume(resume_parse_request)
     except Exception as e:
         return [{"error": str(e)}]
 
