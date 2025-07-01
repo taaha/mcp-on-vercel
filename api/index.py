@@ -367,6 +367,7 @@ class HireStreamAPIClient:
                     output_path,
                     quiet=False,
                     fuzzy=True,
+                    use_cookies=False,
                 )
 
                 # Upload the file to the API
