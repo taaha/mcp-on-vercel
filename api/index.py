@@ -422,9 +422,7 @@ hirestream_client = HireStreamAPIClient(
 @mcp.tool()
 async def list_jobs() -> JobListingResponse:
     """
-    Execute a swap transaction.
-
-    Expects a SwapTransactionRequestContainer, returns a list of SwapTransactionResponse.
+    List all jobs in the Cogent labs.
     """
     try:
         result: JobListingResponse = await hirestream_client.list_jobs()
@@ -438,9 +436,9 @@ async def show_job_details(
     job_details_request: JobDetailsRequest,
 ) -> JobDetailsResponse:
     """
-    Execute a swap transaction.
+    Show the details of a job in the Cogent labs.
 
-    Expects a SwapTransactionRequestContainer, returns a list of SwapTransactionResponse.
+    Expects a JobDetailsRequest, returns a JobDetailsResponse.
     """
     try:
         result: JobDetailsResponse = await hirestream_client.show_job_details(
